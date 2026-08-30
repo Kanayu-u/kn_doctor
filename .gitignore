@@ -1,0 +1,15 @@
+# OS / エディタ
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# FiveM escrow のビルド生成物（OSS 配布物には含めない）
+.fxap
+*.pack.zip
+
+# ローカルの作業ファイル
+*.bak
+*.log

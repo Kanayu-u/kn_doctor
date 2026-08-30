@@ -1,0 +1,66 @@
+kn_doctor — License
+Copyright (c) 2026 Kanayu_u. All rights reserved.
+
+--------------------------------------------------------------------
+ENGLISH
+--------------------------------------------------------------------
+
+This software is source-available, not open source. The source code is
+published for evaluation, study, and use on your own servers. All other
+rights are reserved by the author.
+
+PERMITTED
+  * Use the software on FiveM servers that you own or operate.
+  * Modify the source code for use on those servers.
+  * View and study the source code.
+
+NOT PERMITTED
+  * Redistribute, resell, sublicense, lease, or otherwise share the
+    software or any modified version of it, in whole or in part,
+    whether free of charge or for a fee.
+  * Republish the source code, modified or not, in any publicly
+    accessible location (including but not limited to code hosting
+    services, file hosts, and Discord servers).
+  * Remove or alter copyright notices or author attribution.
+
+Forking this repository on the hosting service it is published on is
+permitted for the purpose of submitting changes back to it. Publishing
+a fork as an independent distribution is not.
+
+NO WARRANTY
+  The software is provided "AS IS", without warranty of any kind,
+  express or implied, including but not limited to the warranties of
+  merchantability and fitness for a particular purpose. In no event
+  shall the author be liable for any claim, damages, or other
+  liability arising from or in connection with the software or its
+  use.
+
+--------------------------------------------------------------------
+日本語
+--------------------------------------------------------------------
+
+本ソフトウェアはソースコードを公開していますが、オープンソースでは
+ありません。公開は内容の確認・検証、および自身のサーバーでの利用を
+目的としたものです。それ以外の権利はすべて作者が留保します。
+
+許可されること
+  * 自身が所有または運営する FiveM サーバーでの使用。
+  * 上記サーバーで使用する目的でのソースコードの改変。
+  * ソースコードの閲覧および検証。
+
+禁止されること
+  * 本ソフトウェアおよびその改変版の、全部または一部の再配布・再販・
+    サブライセンス・貸与・共有。有償無償を問わず禁止します。
+  * ソースコード（改変の有無を問わない）の、公開可能な場所での再公開。
+    コードホスティングサービス、ファイル共有サービス、Discord サーバー
+    などを含みますが、これらに限りません。
+  * 著作権表示および作者表記の削除・改変。
+
+本リポジトリを公開先のホスティングサービス上でフォークすることは、
+変更を本リポジトリへ提案する目的においては許可されます。フォークを
+独立した配布物として公開することは許可されません。
+
+無保証
+  本ソフトウェアは「現状のまま」提供され、商品性および特定目的への
+  適合性を含む一切の保証を行いません。本ソフトウェアの使用に起因する
+  いかなる請求・損害・その他の責任についても、作者は責任を負いません。
