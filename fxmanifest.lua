@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Kanayu_u'
 description 'Optimized Doctor NPC for Revive & Heal (Standalone/ox-based)'
-version '1.1.2'
+version '1.1.3'
 
 
 dependency 'ox_lib'

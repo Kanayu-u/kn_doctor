@@ -1,6 +1,6 @@
 # kn_doctor
 
-[![Version](https://img.shields.io/badge/version-1.1.2-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.1.3-blue.svg)](CHANGELOG.md)
 [![Framework](https://img.shields.io/badge/framework-QBCore%20%7C%20QBox%20%7C%20ESX%20%7C%20Standalone-green.svg)](#依存)
 [![License](https://img.shields.io/badge/license-source--available-lightgrey.svg)](LICENSE)
 
