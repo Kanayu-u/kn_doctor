@@ -1,0 +1,74 @@
+/*
+  KnScript notify (kn_timer / kn_doctor / kn_policearmor 共通)
+  3 リソースで同じ内容。直すときは 3 つとも直すこと。
+
+  CEF の Chromium が古いサーバーもあるため color-mix() などの新しい CSS は使わない。
+  フォーカスは取らない(pointer-events:none)。表示専用。
+*/
+#kn-notify {
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 320px;
+    max-width: calc(100vw - 32px);
+    pointer-events: none;
+}
+#kn-notify[data-pos="top-right"]    { top: 24px; right: 24px; }
+#kn-notify[data-pos="top-left"]     { top: 24px; left: 24px; }
+#kn-notify[data-pos="top-center"]   { top: 24px; left: 50%; transform: translateX(-50%); }
+#kn-notify[data-pos="bottom-right"] { bottom: 24px; right: 24px; flex-direction: column-reverse; }
+#kn-notify[data-pos="bottom-left"]  { bottom: 24px; left: 24px; flex-direction: column-reverse; }
+
+.kn-n {
+    --c: #22D3EE;
+    --bg: rgba(34, 211, 238, 0.14);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px 12px 10px;
+    overflow: hidden;
+    background: rgba(8, 10, 14, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-left: 3px solid var(--c);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-family: 'Segoe UI', 'Yu Gothic UI', 'Meiryo', sans-serif;
+    animation: kn-n-in 0.18s ease-out;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.kn-n.success { --c: #34D399; --bg: rgba(52, 211, 153, 0.14); }
+.kn-n.error   { --c: #F87171; --bg: rgba(248, 113, 113, 0.14); }
+.kn-n.warning { --c: #FBBF24; --bg: rgba(251, 191, 36, 0.14); }
+.kn-n.out     { opacity: 0; transform: translateY(-4px); }
+
+.kn-n-icon {
+    flex: 0 0 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 1px solid var(--c);
+    color: var(--c);
+    font: 700 12px/20px 'Segoe UI', sans-serif;
+    text-align: center;
+}
+.kn-n-text  { flex: 1; min-width: 0; }
+.kn-n-title { font-size: 13px; font-weight: 700; line-height: 1.35; }
+.kn-n-desc  { margin-top: 2px; font-size: 12.5px; line-height: 1.45; opacity: 0.85; word-wrap: break-word; }
+.kn-n-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--c);
+    opacity: 0.6;
+    transform-origin: left;
+    animation: kn-n-bar linear forwards;
+}
+
+@keyframes kn-n-in  { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@keyframes kn-n-bar { from { transform: scaleX(1); } to { transform: scaleX(0); } }

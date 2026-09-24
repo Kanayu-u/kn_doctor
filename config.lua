@@ -48,3 +48,14 @@ Config.Doctors = {
 
 -- 言語設定: 'ja' / 'en'（表示テキストは locales/ 内のファイルで編集可能）
 Config.Locale = 'ja'
+
+-- 通知の表示方法
+--   Style    : 'kn' = このリソース同梱の通知(既定) / 'ox' = ox_lib の通知
+--              他のスクリプトと通知の見た目を揃えたい場合は 'ox' にする
+--   Position : 'top-right' / 'top-left' / 'top-center' / 'bottom-right' / 'bottom-left'
+--   Duration : 表示時間(ミリ秒)
+Config.Notify = {
+    Style    = 'kn',
+    Position = 'top-right',
+    Duration = 4000,
+}

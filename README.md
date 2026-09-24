@@ -1,6 +1,6 @@
 # kn_doctor
 
-[![Version](https://img.shields.io/badge/version-1.1.3-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](CHANGELOG.md)
 [![Framework](https://img.shields.io/badge/framework-QBCore%20%7C%20QBox%20%7C%20ESX%20%7C%20Standalone-green.svg)](#依存)
 [![License](https://img.shields.io/badge/license-source--available-lightgrey.svg)](LICENSE)
 
@@ -33,6 +33,7 @@ NPC ドクターによる蘇生・回復スクリプト。救急隊（EMS）が�
 | `Config.Cooldown` | 再利用までの待機秒数 |
 | `Config.Doctors` | NPC の座標・モデル・ラベル（複数追加可能） |
 | `Config.Text` | 表示テキスト（すべて編集可能） |
+| `Config.Notify` | 通知の表示方法。`Style`: `'kn'`（同梱の通知・既定）/ `'ox'`（ox_lib の通知）、`Position`、`Duration`（ミリ秒） |
 
 ## 注意事項
 

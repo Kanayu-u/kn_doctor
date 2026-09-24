@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0] - 2026-09-24
+
+### Changed
+- **通知を ox_lib の `lib.notify` から同梱の通知画面に変更。** ox_lib は引き続き必須
+  （メニュー・案内表示・サーバーとの通信に使用）。
+
+### Added
+- `Config.Notify`（`Style` / `Position` / `Duration`）。`Style = 'ox'` で従来どおり ox_lib の通知を使える。
+
 ## [1.1.3] - 2026-09-20
 
 ### Fixed

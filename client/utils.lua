@@ -36,11 +36,7 @@ end
 
 -- 汎用通知（引数名を ntype にして Lua 標準関数 type() との衝突を回避）
 function Notify(text, ntype)
-    lib.notify({
-        title       = 'Doctor',
-        description = text,
-        type        = ntype or 'inform',
-    })
+    KnNotify('Doctor', text, ntype or 'info')
 end
 
 
